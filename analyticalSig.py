@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import logging
-import matplotlib.animation as animation
 from potential import AnalyticalSignal
 
 # Set up logging
@@ -131,28 +130,3 @@ plt.xlabel('x')
 plt.ylabel('Signal')
 plt.legend()
 plt.savefig('images/AnalyticalSignal.png', dpi=300)
-
-# Create an animation showing particle movement with contour map and arrows
-fig, ax = plt.subplots()
-ax.set_xlim(-150, 150)
-ax.set_ylim(5, 50)
-contour = ax.contourf(X, H, Z, levels=20, cmap='viridis', alpha=0.7)
-scat = ax.scatter([], [], s=100, color='blue')
-quiver = ax.quiver([], [], [], [], angles='xy', scale_units='xy', scale=1, color='yellow')
-
-def update(frame):
-    positions = positions_over_time[frame]
-    velocities = velocities_over_time[frame]
-    
-    # Update scatter plot
-    scat.set_offsets(np.c_[positions[0], positions[1]])
-    
-    # Update quiver plot
-    if len(positions) > 0 and len(velocities) > 0:
-        quiver.set_offsets(np.c_[positions[0], positions[1]])
-        quiver.set_UVC(velocities[0, :], velocities[1, :])
-    
-    return scat, quiver
-
-ani = animation.FuncAnimation(fig, update, frames=len(positions_over_time), blit=True, repeat=False)
-ani.save('images/particle_movement_Analytical.gif', writer='imagemagick')
