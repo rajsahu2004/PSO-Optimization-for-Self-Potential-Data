@@ -4,6 +4,8 @@
 [![Stars](https://img.shields.io/github/stars/rajsahu2004/Anomaly-Detection?color=yellow)](https://github.com/rajsahu2004/Anomaly-Detection/stargazers)
 [![Forks](https://img.shields.io/github/forks/rajsahu2004/Anomaly-Detection?color=blue)](https://github.com/rajsahu2004/Anomaly-Detection/network/members)
 
+For an in-depth explanation of the methods and results, check out my Medium blog: [Optimizing Self-Potential Models with Particle Swarm Optimization: A Geophysical Approach](https://medium.com/@sahuraj457/optimizing-self-potential-models-with-particle-swarm-optimization-a-geophysical-approach-d83065f7fa62)
+
 
 ## Overview
 
