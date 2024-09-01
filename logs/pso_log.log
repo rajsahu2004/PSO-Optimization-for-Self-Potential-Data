@@ -1,0 +1,138 @@
+2024-09-01 14:26:32,815 - INFO - PSO Optimization started
+2024-09-01 14:26:32,815 - INFO - Starting run 1
+2024-09-01 14:26:33,442 - INFO - Solution found in run 1 after 29 iterations
+2024-09-01 14:26:33,442 - INFO - Total number of iterations: 28
+2024-09-01 14:26:33,442 - INFO - Original parameters: x = 30, h = 10, theta = 29
+2024-09-01 14:26:33,442 - INFO - Final parameters: x = 29.896957714762753, h = 10.072945611861252, theta = 29.806418197465142
+2024-09-01 14:26:33,443 - INFO - Final Error: [0.00097862]
+2024-09-01 14:26:33,443 - INFO - PSO Optimization completed
+2024-09-01 14:27:17,612 - INFO - PSO Optimization started
+2024-09-01 14:27:17,613 - INFO - Starting run 1
+2024-09-01 14:27:17,978 - INFO - Solution found in run 1 after 16 iterations
+2024-09-01 14:27:17,978 - INFO - Total number of iterations: 15
+2024-09-01 14:27:17,978 - INFO - Original parameters: x = 30, h = 10, theta = 29
+2024-09-01 14:27:17,978 - INFO - Final parameters: x = 29.99261144373641, h = 9.972608467932425, theta = 28.823140466796218
+2024-09-01 14:27:17,979 - INFO - Final Error: [0.00066531]
+2024-09-01 14:27:17,979 - INFO - PSO Optimization completed
+2024-09-01 14:28:17,823 - INFO - PSO Optimization started
+2024-09-01 14:28:17,824 - INFO - Starting run 1
+2024-09-01 14:28:26,270 - INFO - Starting run 2
+2024-09-01 14:28:26,669 - INFO - Solution found in run 2 after 19 iterations
+2024-09-01 14:28:26,669 - INFO - Total number of iterations: 418
+2024-09-01 14:28:26,669 - INFO - Original parameters: x = 30, h = 10, theta = 29
+2024-09-01 14:28:26,669 - INFO - Final parameters: x = 30.019420363469187, h = 9.972436040770155, theta = 29.032202022011507
+2024-09-01 14:28:26,670 - INFO - Final Error: [0.0006127]
+2024-09-01 14:28:26,670 - INFO - PSO Optimization completed
+2024-09-01 14:32:18,972 - INFO - PSO Optimization started
+2024-09-01 14:32:18,973 - INFO - Starting run 1
+2024-09-01 14:32:19,619 - INFO - Solution found in run 1 after 29 iterations
+2024-09-01 14:32:19,619 - INFO - Total number of iterations: 28
+2024-09-01 14:32:19,619 - INFO - Original parameters: x = 30, h = 10, theta = 29
+2024-09-01 14:32:19,619 - INFO - Final parameters: x = 29.896025224288806, h = 10.02643320419634, theta = 29.635621973533606
+2024-09-01 14:32:19,620 - INFO - Final Error: [0.00088593]
+2024-09-01 14:32:19,620 - INFO - PSO Optimization completed
+2024-09-01 14:32:25,168 - INFO - GIF creation completed
+2024-09-01 14:33:15,800 - INFO - PSO Optimization started
+2024-09-01 14:33:15,801 - INFO - Starting run 1
+2024-09-01 14:33:16,840 - INFO - Solution found in run 1 after 47 iterations
+2024-09-01 14:33:16,841 - INFO - Total number of iterations: 46
+2024-09-01 14:33:16,841 - INFO - Original parameters: x = 30, h = 10, theta = 29
+2024-09-01 14:33:16,841 - INFO - Final parameters: x = 29.9673230666437, h = 10.078516504056072, theta = 29.34176931664212
+2024-09-01 14:33:16,841 - INFO - Final Error: [0.00079214]
+2024-09-01 14:33:16,841 - INFO - PSO Optimization completed
+2024-09-01 14:33:22,719 - INFO - GIF creation completed
+2024-09-01 14:35:06,927 - INFO - PSO Optimization started
+2024-09-01 14:35:06,940 - INFO - Starting run 1
+2024-09-01 14:35:07,653 - INFO - Solution found in run 1 after 33 iterations
+2024-09-01 14:35:07,653 - INFO - Total number of iterations: 32
+2024-09-01 14:35:07,653 - INFO - Original parameters: x = 30, h = 10, theta = 29
+2024-09-01 14:35:07,653 - INFO - Final parameters: x = 29.90307388745761, h = 9.990800985791541, theta = 29.199062783943692
+2024-09-01 14:35:07,654 - INFO - Final Error: [0.00094046]
+2024-09-01 14:35:07,654 - INFO - PSO Optimization completed
+2024-09-01 14:35:16,455 - INFO - GIF creation completed
+2024-09-01 14:35:53,300 - INFO - PSO Optimization started
+2024-09-01 14:35:53,315 - INFO - Starting run 1
+2024-09-01 14:35:53,838 - INFO - Solution found in run 1 after 23 iterations
+2024-09-01 14:35:53,838 - INFO - Total number of iterations: 22
+2024-09-01 14:35:53,838 - INFO - Original parameters: x = 50, h = 20, theta = 50
+2024-09-01 14:35:53,838 - INFO - Final parameters: x = 50.61872299234327, h = 19.747345264758934, theta = 48.364737303945034
+2024-09-01 14:35:53,838 - INFO - Final Error: [0.0009541]
+2024-09-01 14:35:53,838 - INFO - PSO Optimization completed
+2024-09-01 14:36:00,691 - INFO - GIF creation completed
+2024-09-01 14:37:01,594 - INFO - PSO Optimization started
+2024-09-01 14:37:01,609 - INFO - Starting run 1
+2024-09-01 14:37:10,264 - INFO - Starting run 2
+2024-09-01 14:37:10,329 - INFO - Solution found in run 2 after 3 iterations
+2024-09-01 14:37:10,329 - INFO - Total number of iterations: 402
+2024-09-01 14:37:10,329 - INFO - Original parameters: x = 130, h = 78, theta = 45
+2024-09-01 14:37:10,329 - INFO - Final parameters: x = 150.0, h = 50.0, theta = 0.0
+2024-09-01 14:37:10,330 - INFO - Final Error: [0.00059009]
+2024-09-01 14:37:10,330 - INFO - PSO Optimization completed
+2024-09-01 14:37:48,985 - INFO - GIF creation completed
+2024-09-01 14:38:37,022 - INFO - PSO Optimization started
+2024-09-01 14:38:37,036 - INFO - Starting run 1
+2024-09-01 14:38:37,233 - INFO - Solution found in run 1 after 9 iterations
+2024-09-01 14:38:37,233 - INFO - Total number of iterations: 8
+2024-09-01 14:38:37,233 - INFO - Original parameters: x = 100, h = 40, theta = 45
+2024-09-01 14:38:37,233 - INFO - Final parameters: x = 102.83783511276737, h = 39.03598247673617, theta = 40.638811438743865
+2024-09-01 14:38:37,233 - INFO - Final Error: [0.00065347]
+2024-09-01 14:38:37,233 - INFO - PSO Optimization completed
+2024-09-01 14:38:38,469 - INFO - GIF creation completed
+2024-09-01 14:38:52,604 - INFO - PSO Optimization started
+2024-09-01 14:38:52,618 - INFO - Starting run 1
+2024-09-01 14:39:00,937 - INFO - Starting run 2
+2024-09-01 14:39:09,212 - INFO - Starting run 3
+2024-09-01 14:39:17,514 - INFO - Starting run 4
+2024-09-01 14:39:25,775 - INFO - Starting run 5
+2024-09-01 14:39:34,022 - INFO - Starting run 6
+2024-09-01 14:39:42,277 - INFO - Starting run 7
+2024-09-01 14:39:50,537 - INFO - Starting run 8
+2024-09-01 14:39:58,796 - INFO - Starting run 9
+2024-09-01 14:40:07,064 - INFO - Starting run 10
+2024-09-01 14:40:15,329 - INFO - Starting run 11
+2024-09-01 14:40:23,595 - INFO - Starting run 12
+2024-09-01 14:40:32,235 - INFO - PSO Optimization started
+2024-09-01 14:40:32,250 - INFO - Starting run 1
+2024-09-01 14:40:33,302 - INFO - Solution found in run 1 after 50 iterations
+2024-09-01 14:40:33,302 - INFO - Total number of iterations: 49
+2024-09-01 14:40:33,302 - INFO - Original parameters: x = 100, h = 10, theta = 45
+2024-09-01 14:40:33,302 - INFO - Final parameters: x = 100.11187236984838, h = 9.937963006557506, theta = 44.331166435955865
+2024-09-01 14:40:33,302 - INFO - Final Error: [0.00088292]
+2024-09-01 14:40:33,302 - INFO - PSO Optimization completed
+2024-09-01 14:40:37,923 - INFO - GIF creation completed
+2024-09-01 14:42:18,605 - INFO - PSO Optimization started
+2024-09-01 14:42:18,619 - INFO - Starting run 1
+2024-09-01 14:42:18,828 - INFO - Solution found in run 1 after 9 iterations
+2024-09-01 14:42:18,828 - INFO - Total number of iterations: 8
+2024-09-01 14:42:18,828 - INFO - Original parameters: x = -80, h = 30, theta = 45
+2024-09-01 14:42:18,828 - INFO - Final parameters: x = -79.01738570016391, h = 29.95821253159072, theta = 42.11003035960459
+2024-09-01 14:42:18,829 - INFO - Final Error: [0.00063272]
+2024-09-01 14:42:18,829 - INFO - PSO Optimization completed
+2024-09-01 14:42:20,100 - INFO - GIF creation completed
+2024-09-01 14:42:36,876 - INFO - PSO Optimization started
+2024-09-01 14:42:36,890 - INFO - Starting run 1
+2024-09-01 14:42:36,984 - INFO - Solution found in run 1 after 4 iterations
+2024-09-01 14:42:36,985 - INFO - Total number of iterations: 3
+2024-09-01 14:42:36,985 - INFO - Original parameters: x = -80, h = 50, theta = 45
+2024-09-01 14:42:36,985 - INFO - Final parameters: x = -77.3674379170361, h = 50.0, theta = 42.80239598512408
+2024-09-01 14:42:36,985 - INFO - Final Error: [0.00027621]
+2024-09-01 14:42:36,985 - INFO - PSO Optimization completed
+2024-09-01 14:42:37,828 - INFO - GIF creation completed
+2024-09-01 14:43:01,537 - INFO - PSO Optimization started
+2024-09-01 14:43:01,551 - INFO - Starting run 1
+2024-09-01 14:43:01,832 - INFO - Solution found in run 1 after 13 iterations
+2024-09-01 14:43:01,832 - INFO - Total number of iterations: 12
+2024-09-01 14:43:01,832 - INFO - Original parameters: x = -79, h = 23, theta = 47
+2024-09-01 14:43:01,832 - INFO - Final parameters: x = -79.82477186908638, h = 23.330336137226666, theta = 48.965711679641664
+2024-09-01 14:43:01,833 - INFO - Final Error: [0.00067089]
+2024-09-01 14:43:01,833 - INFO - PSO Optimization completed
+2024-09-01 14:43:03,441 - INFO - GIF creation completed
+2024-09-01 14:45:42,803 - INFO - PSO Optimization started
+2024-09-01 14:45:42,819 - INFO - Starting run 1
+2024-09-01 14:45:43,193 - INFO - Solution found in run 1 after 17 iterations
+2024-09-01 14:45:43,194 - INFO - Total number of iterations: 16
+2024-09-01 14:45:43,194 - INFO - Original parameters: x = -79, h = 23, theta = 47
+2024-09-01 14:45:43,194 - INFO - Final parameters: x = -79.8368179754231, h = 23.479504448681013, theta = 49.85595649818227
+2024-09-01 14:45:43,194 - INFO - Final Error: [0.000878]
+2024-09-01 14:45:43,194 - INFO - PSO Optimization completed
+2024-09-01 14:45:45,183 - INFO - GIF creation completed

@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import logging
+import imageio
 from potential import PotentialSphere
 
 # Set up logging
@@ -16,15 +17,23 @@ def Error(k):
     return error
 
 x = np.arange(-150, 150)
-Xo = 30
-h = 10
-theta = 29
+Xo = -79
+h = 23
+theta = 47
 Vo = np.empty((300, 1))
 for i in range(0, 300):
     Vo[i, 0] = PotentialSphere(x[i], Xo, h, theta)
 
 noOfRuns = 0
 found_solution = False
+particle_positions = []  # To store positions of particles for the GIF
+particle_velocities = []  # To store velocities for the arrows
+
+# Create a grid for contour plotting
+x_grid = np.linspace(-150, 150, 100)
+h_grid = np.linspace(5, 50, 100)
+X, H = np.meshgrid(x_grid, h_grid)
+Z = np.array([[PotentialSphere(x_val, Xo, h_val, theta) for x_val in x_grid] for h_val in h_grid])
 
 while not found_solution:
     noOfIterations = np.array([])
@@ -33,6 +42,7 @@ while not found_solution:
     logger.info(f"Starting run {noOfRuns}")
 
     position = np.empty((3, 20))
+    velocity = np.zeros((3, 20))  # Initialize velocities
     for k in range(0, 20):
         position[0, k] = -150 + np.random.random() * 300
         position[1, k] = 5 + np.random.random() * 45
@@ -46,6 +56,10 @@ while not found_solution:
 
     # PSO with progress bar
     for c in tqdm(range(1, 401), desc=f'Run {noOfRuns}'):
+        # Record particle positions and velocities for GIF
+        particle_positions.append(position.copy())
+        particle_velocities.append(velocity.copy())
+
         # Finding and updating V
         for k in range(0, 20):
             for i in range(0, 300):
@@ -71,6 +85,9 @@ while not found_solution:
         position[0, :] = np.clip(position[0, :], -150, 150)
         position[1, :] = np.clip(position[1, :], 5, 50)
         position[2, :] = np.clip(position[2, :], 0, 90)
+
+        # Update velocities
+        velocity = U.copy()
 
         noOfIterations = np.append(noOfIterations, c)
         errorG = np.append(errorG, Error(G))
@@ -101,8 +118,7 @@ plt.plot(noOfIterations, errorG)
 plt.xlabel('No. of iterations')
 plt.ylabel('Error')
 plt.title('Error vs No. of iterations')
-plt.savefig('Error.png', dpi=300)
-plt.show()
+plt.savefig('images/Error PSO.png', dpi=300)
 
 # Plot Self Potential Profile
 Vans = np.empty((300, 1))
@@ -114,5 +130,46 @@ plt.title('Self Potential Profile')
 plt.xlabel('x')
 plt.ylabel('V (mV)')
 plt.legend()
-plt.savefig('SP_Profile.png', dpi=300)
-plt.show()
+plt.savefig('images/SP_Profile.png', dpi=300)
+
+# Create GIF of particle movements with contour map and arrows
+filenames = []
+for i, (positions, velocities) in enumerate(zip(particle_positions, particle_velocities)):
+    plt.figure(figsize=(8, 6))
+    
+    # Plot contour map
+    plt.contourf(X, H, Z, levels=20, cmap='viridis', alpha=0.7)
+    
+    # Plot particle positions
+    plt.scatter(positions[0, :], positions[1, :], c='blue', label='Particles')
+    plt.scatter(g[0, 0], g[1, 0], c='red', label='Global Best')
+
+    # Add arrows to represent velocities
+    plt.quiver(positions[0, :], positions[1, :], velocities[0, :], velocities[1, :], 
+               angles='xy', scale_units='xy', scale=1, color='yellow')
+
+    plt.xlim(-150, 150)
+    plt.ylim(5, 50)
+    plt.xlabel('x')
+    plt.ylabel('h')
+    plt.title(f'Iteration {i + 1}')
+    plt.legend()
+    
+    # Save each frame as a temporary file
+    filename = f'images/iteration_{i}.png'
+    plt.savefig(filename)
+    filenames.append(filename)
+    plt.close()
+
+# Generate GIF from frames
+with imageio.get_writer('images/particle_movement_PSO.gif', mode='I', duration=0.2) as writer:
+    for filename in filenames:
+        image = imageio.imread(filename)
+        writer.append_data(image)
+
+# Cleanup temporary files
+import os
+for filename in filenames:
+    os.remove(filename)
+
+logger.info("GIF creation completed")
